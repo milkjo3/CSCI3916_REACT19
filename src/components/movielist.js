@@ -32,7 +32,7 @@ function MovieList() {
     }
 
     return (
-        <Carousel onSelect={handleSelect} className="bg-dark text-light p-4 rounded">
+        <Carousel onSelect={handleSelect} className="movie-carousel">
           {memoizedMovies.map((movie) => (
             <Carousel.Item key={movie._id}>
               {/* Use Nav.Link with "as={Link}" to avoid nested anchors */}
@@ -45,7 +45,7 @@ function MovieList() {
               </Nav.Link>
               <Carousel.Caption>
                 <h3>{movie.title}</h3>
-                <BsStarFill /> {movie.avgRating} &nbsp;&nbsp; {movie.releaseDate}
+                <BsStarFill /> {movie.avgRating.toFixed(1)} &nbsp;&nbsp; {movie.releaseDate}
               </Carousel.Caption>
             </Carousel.Item>
           ))}

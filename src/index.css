@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+:root {
+  /* Primary Colors */
+  --obsidian-black: #0B0B0F;
+  --aged-parchment: #E8DCC4;
+  --ash-gray: #2A2A2E;
+
+  /* Accent Colors */
+  --crimson-ink: #8C1C1C;
+  --molten-gold: #C9A34E;
+  --ember-glow: #FFB347;
+
+  /* Secondary */
+  --midnight-plum: #3B2C3F;
+  --smoke-violet: #6B5A73;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Eagle Lake', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
