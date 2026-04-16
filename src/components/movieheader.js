@@ -18,7 +18,10 @@ function MovieHeader() {
     return (
         <div>
             <Navbar expand="lg" className='custom-navbar' variant="dark">
-                <Navbar.Brand as={NavLink} to="/">The Critic's Grimoire</Navbar.Brand> 
+                {loggedIn? (<Navbar.Brand as={NavLink} to="/">The Critic's Grimoire</Navbar.Brand> ) : (
+                    <Navbar.Brand as={NavLink} >The Critic's Grimoire</Navbar.Brand> 
+                )}
+                
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
@@ -29,10 +32,9 @@ function MovieHeader() {
                         Movie Detail
                     </Nav.Link>
                 
-                
                         {loggedIn? (
                             <NavDropdown align="end" title="Profile" id="basic-nav-dropdown" className='nav-dropdown' alignRight>
-                                <NavDropdown.Item href="">View Profile</NavDropdown.Item>
+                                <NavDropdown.Item href="" >View Profile</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#/signin" onClick={logout}>Logout</NavDropdown.Item>
                                 <NavDropdown.Divider />
