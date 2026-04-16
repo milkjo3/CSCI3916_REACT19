@@ -79,6 +79,7 @@
 }
 
 .image {
+  
   height: 500px;      /* Set a consistent height */
   width: auto;        /* Width adjusts to maintain aspect ratio */
   object-fit: contain; /* Ensures the image scales to fit without cropping */
@@ -101,6 +102,18 @@
 .movie-detail {
   background-color: var(--ash-gray);
 }
+.image-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-col {
+  display: flex;
+  align-items: center;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
