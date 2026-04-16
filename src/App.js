@@ -11,7 +11,7 @@ function App() {
       <HashRouter> {/* The Router component */}
         <MovieHeader />
         <Routes>
-          <Route path="/" element={<MovieList />} />
+          <Route path="*" element={<Authentication />} />
           <Route path="/movielist" element={<MovieList />}/>
           <Route path="/movie/:movieId" element={<Movie />}/>
           <Route path="/signin" element={<Authentication />}/>
